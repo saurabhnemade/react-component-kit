@@ -18,6 +18,12 @@ module.exports = {
             use: [
               { loader: 'raw-loader' }
             ]
+          },
+          {
+            test: /\.js$/,
+            use: [
+              { loader: 'eslint-loader' }
+            ]
           }
         ]
       }
